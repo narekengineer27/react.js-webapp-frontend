@@ -1,0 +1,60 @@
+.edit-form {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  margin-bottom: 16px;
+  padding: 40px 105px;
+  margin-left: 16px;
+  .row {
+    margin: 0;
+  }
+}
+@media (max-width: 900px) {
+  .edit-form {
+    margin-left: 0;
+    padding: 40px 80px;
+  }
+}
+@media (max-width: 768px) {
+  .edit-form {
+    margin-left: 0;
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 576px) {
+  .cancel {
+    margin-right: 0px !important;
+  }
+}
+.edit-form-title {
+  font-size: 23px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.action-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  //   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .cancel {
+    font-size: 17px;
+    margin-right: 16px !important;
+  }
+  .save {
+    padding: 11px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+.form-control.location {
+  padding: 10px 40px 10px 12px;
+  background: url("../../../assets/img/svg/placeholder.svg") center right 10px/20px
+    24px no-repeat;
+}

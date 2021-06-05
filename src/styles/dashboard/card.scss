@@ -1,0 +1,88 @@
+.card {
+  width: 100%;
+  border-radius: 0px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: 768px) {
+    .card-imgholder {
+      height: 210px;
+      position: relative;
+
+      .card-images {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card-imgholder {
+      height: 230px;
+      position: relative;
+
+      .card-images {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .card-info {
+    padding: 15px;
+
+    .card-info-header {
+      background: transparent;
+      position: static;
+
+      .card-name {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 17px;
+        line-height: 1;
+        font-weight: 600;
+        color: #333333;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .card-info-footer {
+      box-sizing: inherit;
+
+      .card-price {
+        color: $green;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card-location {
+        font-size: 12px;
+        color: #333333;
+        position: relative;
+        padding: 0 25px 0 0;
+      }
+
+      .card-location::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 14px;
+        height: 16px;
+        background: url("../../assets/img/svg/placeholder.svg") 0 0 no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+.auc-sign {
+  color: green;
+  font-style: italic;
+}

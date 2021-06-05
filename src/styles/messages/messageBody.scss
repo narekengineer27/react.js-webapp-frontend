@@ -1,0 +1,538 @@
+.messages-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+
+  .messages-menu {
+    max-width: 288px;
+    background-color: #fff;
+    border-right: 1px solid #e1e1e1;
+  }
+  .messages-menu-mobile {
+    display: block;
+    width: 100% !important;
+    background-color: #fff;
+    border-right: 1px solid #e1e1e1;
+  }
+  .messages-menu-body {
+    height: 100%;
+    overflow-x: auto;
+
+    .contact-container {
+      padding: 16px;
+      display: block;
+      border-bottom: 1px solid #e1e1e1;
+      border-left: 2px solid transparent;
+      border-left-color: transparent;
+      width: 100%;
+      position: relative;
+      z-index: 10;
+      cursor: pointer;
+
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.11);
+      background-color: #fffefe;
+
+      .contact-profile {
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+
+        .contact-profile-avatar {
+          float: left;
+          position: relative;
+          display: block;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 15px;
+          min-width: 48px;
+        }
+
+        .contact-profile-text {
+          width: 185px;
+          font-size: 13px;
+          color: #000;
+          position: relative;
+          float: right;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          .contact-listing-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: #333333;
+            width: 100%;
+          }
+
+          .contact-opponent-name-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            .contact-opponent-name {
+              font-size: 12px;
+              font-weight: 400;
+              color: #333333;
+            }
+          }
+
+          .contact-last-message {
+            line-height: 14px;
+            -webkit-box-orient: vertical;
+            font-size: 12px;
+            white-space: nowrap;
+            color: #858585;
+            margin-top: 3px;
+            max-width: 93%;
+            display: inline-block;
+          }
+        }
+      }
+
+      .contact-date {
+        position: absolute;
+        bottom: 2px;
+        right: 16px;
+        font-size: 10px;
+        color: #333333;
+        font-weight: 300;
+      }
+    }
+
+    .contact-container:hover {
+      border-left-color: $blue;
+    }
+  }
+
+  .messages-menu-search {
+    padding: 0px;
+    position: relative;
+  }
+
+  .messages-menu-search-input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 10px 10px 44px;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 14px;
+    font-weight: 500;
+    background: url("../../assets/img/svg/search.svg") 15px 9px/20px 24px
+      no-repeat;
+  }
+
+  .messages-main-box {
+    border-right: 1px solid #e1e1e1;
+    width: 544px;
+    .seller-name {
+      width: 100%;
+      height: 45px;
+      padding: 12px 15px;
+      line-height: 1.3;
+      font-size: 15px;
+      font-weight: 500;
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    .messages-input-area {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      padding: 20px;
+
+      textarea {
+        width: 80%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 12px 36px 12px 12px;
+        font-size: 15px;
+        font-weight: 500;
+        border: 1px solid #e1e1e1;
+        background-color: #f7f7f7;
+        resize: vertical;
+        height: auto;
+        min-height: 48px;
+        max-height: 78px;
+        border-radius: 5px;
+      }
+
+      .send-button-container {
+        margin: auto;
+        font-size: 20px;
+
+        button {
+          color: #ffffff;
+          border-color: $green;
+          background-color: $green;
+          margin-left: 10px;
+          height: 45px;
+          padding-left: 15px;
+          padding-right: 15px;
+          border-style: solid;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        input {
+          width: 60%;
+        }
+      }
+    }
+
+    .messages-show-box {
+      height: 400px;
+      overflow-x: auto;
+
+      .my-message-container {
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        padding-top: 10px;
+
+        .my-message-inner-container {
+          padding-right: 10px;
+
+          .my-message-content {
+            border-radius: 20px 20px 0 20px;
+            background-color: #3d4d77;
+            color: #ffffff;
+            text-align: right;
+            margin: 0 0 0 50px;
+            padding: 15px 15px;
+          }
+          .my-message-time {
+            font-size: 10px;
+            color: grey;
+            outline: none !important;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+          }
+        }
+      }
+      .opponent-message-container {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10px;
+        padding-left: 10px;
+
+        .opponent-avatar {
+          border-radius: 50%;
+          background-color: gray;
+          color: white;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          margin-right: 10px;
+          min-width: 50px;
+        }
+
+        .opponent-message-inner-container {
+          .opponent-message-content {
+            border-radius: 20px 20px 20px 0;
+            background-color: #f1f1f1;
+            text-align: left;
+            color: #555555;
+            margin: 0 0 0 0px;
+            padding: 15px 15px;
+          }
+          .opponent-message-time {
+            font-size: 10px;
+            color: rgb(156, 143, 143);
+            outline: none !important;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .message-seller-container-mobile {
+    display: block;
+    overflow: scroll;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100% !important;
+    position: relative;
+  }
+  .message-seller-container {
+    overflow: scroll;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 288px;
+    position: relative;
+  }
+  .message-seller-info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 20px;
+    overflow: hidden;
+
+    .message-seller-avatar {
+      background: grey;
+      width: 72px;
+      height: 72px;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 72px;
+      flex: 0 0 72px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 15px 0 0;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      color: white;
+      font-size: 20px;
+
+      .message-seller-avatar-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .message-seller-avatar-alternative {
+        float: left;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 15px;
+      }
+    }
+
+    .info-user {
+      width: 100%;
+      color: #333333;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .name-user {
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 4px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: #333333;
+      }
+
+      .name-company {
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      .location {
+        font-size: 13px;
+        font-weight: 500;
+        color: #848484;
+      }
+    }
+  }
+
+  .info-button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 0;
+    border-top: 1px solid #e1e1e1;
+    padding: 10px 10px;
+    justify-content: space-around;
+
+    .button {
+      font-size: 12px;
+      font-weight: normal;
+      display: inline-block;
+      margin: 3%;
+      a {
+        color: $green;
+      }
+    }
+
+    .button:hover {
+      box-shadow: 0 2px 4px $blue;
+    }
+  }
+
+  .product-container {
+    .product-avatar-container {
+      padding: 0px 20px 20px;
+
+      .product-avatar {
+        overflow: hidden;
+        margin-bottom: 15px;
+      }
+    }
+    .product-info {
+      padding: 0px 20px 20px;
+
+      .product-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .price-container {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        border-bottom: 1px solid #e1e1e1;
+      }
+      .location-container {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        border-bottom: 1px solid #e1e1e1;
+
+        .location {
+          font-size: 12px;
+          color: grey;
+          width: 60%;
+          text-align: right;
+        }
+      }
+      .detail-container {
+        width: 90%;
+        border-bottom: 1px solid #e1e1e1;
+        .shot-text {
+          font-size: 12px;
+          color: grey;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .price-converter-container {
+    outline: none !important;
+    margin: 0;
+    padding: 0;
+
+    .price-converter-inner {
+      margin: 15px;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+
+      .price-converter-header {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from($green),
+          to($green)
+        );
+        background-image: linear-gradient(180deg, $green 0%, $green 100%);
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+        padding: 13px;
+        letter-spacing: 1.5px;
+      }
+
+      .price-converter-content {
+        outline: none !important;
+        margin: 0;
+        padding: 0;
+
+        p.description {
+          font-size: 12px;
+          font-weight: 500;
+          color: #848484;
+          padding: 15px;
+        }
+
+        .form-row {
+          width: 100%;
+          padding: 0 25px 25px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column;
+
+          .form-item {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            margin: 0 8px;
+
+            .label {
+              font-size: 15px;
+              font-weight: 600;
+              margin-bottom: 4px;
+              color: #333333;
+              display: block;
+            }
+
+            .input {
+              margin-top: 7px;
+              height: 34px;
+            }
+          }
+        }
+      }
+
+      .total-price-container {
+        width: 100%;
+        margin-top: 30px;
+        border-top: 1px solid #e1e1e1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .total-price {
+          margin-left: 5%;
+          margin-right: 5%;
+          font-size: 15px;
+          font-weight: bold;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+.contact-unreadmessages {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 18px;
+  height: 18px;
+  background: $blue;
+  color: #fff;
+  font-size: 10px;
+  line-height: 18px !important;
+  font-style: initial;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  overflow: hidden;
+}

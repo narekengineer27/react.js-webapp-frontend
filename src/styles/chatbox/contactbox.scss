@@ -1,0 +1,157 @@
+.contactbox-container {
+  position: fixed;
+  right: 350px;
+  bottom: 10px;
+  width: 350px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+  background: white;
+  border-radius: 8px 8px 0 0;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-bottom-color: $blue;
+    border-radius: 8px 8px 0 0;
+    background: $blue;
+    color: white;
+
+    .seller-name {
+      height: 40px;
+      padding: 12px 15px;
+      line-height: 1.3;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .close-button {
+      font-size: 20px;
+      padding-right: 10px;
+    }
+
+    .close-button:hover {
+      cursor: pointer;
+    }
+  }
+
+  .messages-input-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 20px;
+
+    textarea {
+      width: 80%;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      padding: 12px 36px 12px 12px;
+      font-size: 15px;
+      font-weight: 500;
+      border: 1px solid #e1e1e1;
+      background-color: #f7f7f7;
+      resize: vertical;
+      height: auto;
+      min-height: 48px;
+      max-height: 78px;
+      border-radius: 5px;
+    }
+
+    .send-button-container {
+      margin: auto;
+      font-size: 20px;
+
+      button {
+        color: #ffffff;
+        border-color: $green;
+        background-color: $green;
+        margin-left: 10px;
+        height: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      input {
+        width: 60%;
+      }
+    }
+  }
+
+  .messages-show-box {
+    height: 400px;
+    overflow-x: auto;
+
+    .my-message-container {
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-top: 10px;
+
+      .my-message-inner-container {
+        padding-right: 10px;
+
+        .my-message-content {
+          border-radius: 20px 20px 0 20px;
+          background-color: #3d4d77;
+          color: #ffffff;
+          text-align: right;
+          margin: 0 0 0 50px;
+          padding: 15px 15px;
+        }
+        .my-message-time {
+          font-size: 10px;
+          color: grey;
+          outline: none !important;
+          margin: 0;
+          padding: 0;
+          text-align: right;
+        }
+      }
+    }
+    .opponent-message-container {
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 10px;
+      padding-left: 10px;
+
+      .opponent-avatar {
+        border-radius: 50%;
+        background-color: gray;
+        color: white;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-right: 10px;
+        min-width: 50px;
+      }
+
+      .opponent-message-inner-container {
+        .opponent-message-content {
+          border-radius: 20px 20px 20px 0;
+          background-color: #f1f1f1;
+          text-align: left;
+          color: #555555;
+          margin: 0 0 0 0px;
+          padding: 15px 15px;
+        }
+        .opponent-message-time {
+          font-size: 10px;
+          color: rgb(156, 143, 143);
+          outline: none !important;
+          margin: 0;
+          padding: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

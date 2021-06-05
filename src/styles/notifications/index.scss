@@ -1,0 +1,109 @@
+.notifications-block {
+  background: white;
+  position: relative;
+  font-size: 13px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+
+  .notifications-header {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 30px 0 10px;
+    color: $blue;
+    border-bottom: 0px;
+    margin-bottom: 25px;
+  }
+  .notifications-body {
+    position: relative;
+    overflow: auto;
+    max-height: 700px;
+    color: #616161;
+
+    .notifications-item {
+      padding: 13px 20px;
+      background: #fff;
+      border-bottom: 1px solid #e1e1e1;
+
+      & > div {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+        .action-word {
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          margin-left: 8px;
+          font-size: 20px;
+        }
+      }
+      a {
+        color: #616161;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+    }
+    .notifications-item:hover {
+      background: #ebebeb;
+    }
+    .image-profile {
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      border-radius: 50%;
+      display: block;
+      font-size: 17px;
+      text-align: center;
+      background: $blue;
+
+      & > .main-logo {
+        width: 40px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        left: 25px;
+      }
+
+      .avatar {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+      }
+    }
+    .name-span {
+      font-size: 20px;
+      font-weight: 600;
+      color: $blue;
+      margin-left: 18px;
+      text-align: center;
+    }
+    .timeline-badge {
+      font-size: 12px;
+      padding: 0 6px;
+      margin-left: 14px;
+      text-align: center;
+      font-size: 1rem;
+      color: #757575;
+    }
+    .notifications-remove {
+      font-size: 20px;
+      z-index: 999;
+      text-align: right;
+    }
+  }
+}

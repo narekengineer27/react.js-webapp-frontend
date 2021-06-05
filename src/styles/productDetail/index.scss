@@ -1,0 +1,89 @@
+@import "./productView.scss";
+@import "./productsSlider.scss";
+@import "./auction.scss";
+
+.swiper-slide {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.swiper-slide:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+.product-view-inner {
+  padding: 65px 80px 30px;
+
+  .promo-line {
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+}
+.product-view-header {
+  border-bottom: 1px solid $blue;
+}
+.modal-follow {
+  text-align: center;
+  .modal-follow-header {
+    border: none !important;
+  }
+  .modal-head {
+    background-color: #fff;
+    margin: 0px 20px;
+    padding-bottom: 10px !important;
+    font-size: 19px;
+    font-weight: bold;
+    color: $green;
+  }
+  .modal-head-title {
+    display: inline-block;
+    .icon {
+      display: inline-block;
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+    .follow {
+      color: $green;
+    }
+    .unfollow {
+      color: orange;
+    }
+    .title {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+  .modal-text {
+    text-align: center !important;
+    font-size: 16px !important;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: #4d4d4d;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 996px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+@media (min-width: 0px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .product-view-inner {
+    padding: 50px 30px 30px;
+
+    .promo-line {
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+  }
+}

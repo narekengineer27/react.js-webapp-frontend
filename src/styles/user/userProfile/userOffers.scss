@@ -1,0 +1,15 @@
+.profile-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 20px 0;
+}
+.profile-filter-title {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 17px;
+  font-weight: bold;
+  border-bottom: 1px solid #b2b2bb;
+  padding-bottom: 7px;
+}

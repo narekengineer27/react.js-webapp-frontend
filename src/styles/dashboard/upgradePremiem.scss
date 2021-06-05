@@ -1,0 +1,42 @@
+.promo-line {
+  padding: 15px 25px;
+  background: linear-gradient(270deg, $blue 0%, $green 100%);
+  width: 100%;
+ 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  color: #339a62;
+  font-size: 18px;
+
+  .promo-line-inner {
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 17px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #ffffff;
+
+    .promo-line-inner-text {
+      font-size: 14px;
+      letter-spacing: 1px;
+      .b {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .learn-more {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 40px;
+    border-bottom: 1px solid #ffffff;
+    font-size: 15px;
+    transition: all linear 0.2s;
+  }
+  .learn-more:hover {
+    text-shadow: 0px 0px 3px #dddddd;
+    filter: blur(0.3px);
+  }
+}

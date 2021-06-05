@@ -1,0 +1,48 @@
+@import "./messageHeader.scss";
+@import "./messageBody.scss";
+
+.message-block {
+  height: 647px;
+  overflow: hidden;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.messages-dropdown-list {
+  max-height: 200px;
+}
+
+@media (max-width: 1200px) {
+  .messages-menu {
+    display: none;
+  }
+  .messages-header .material {
+    display: block;
+  }
+  .messages-main-box {
+    width: 70% !important;
+  }
+}
+@media (max-width: 768px) {
+  .messages-main-box {
+    width: 100% !important;
+  }
+  .message-seller-container {
+    display: none;
+  }
+  .messages-header .seller {
+    display: block;
+  }
+}
+.view-more-btn {
+  margin-top:20px;
+  width: 100%;
+}

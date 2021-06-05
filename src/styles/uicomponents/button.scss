@@ -1,0 +1,49 @@
+.plastplace-button-outline {
+  color: $blue;
+  background-color: #ffffff;
+  border: 1px solid $blue;
+  padding: 0.84rem 1.5rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.81rem;
+  transition: all linear 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(127,224,164, 0.8);
+}
+
+.plastplace-button-outline:hover {
+  box-shadow: 0 4px 8px 0 rgba(127,224,164, 0.8);
+  background-color: $blue;
+  color: #ffffff;
+}
+
+.plastplace-button {
+  color: #ffffff;
+  background-color: $green;
+  border: 1px solid $green;
+  padding: 0.84rem 1.5rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.81rem;
+  transition: all linear 0.2s;
+  box-shadow: 0 2px 4px 0 rgba(127,224,164, 0.8);
+  cursor: pointer;
+}
+
+.plastplace-button:hover {
+  box-shadow: 0 4px 8px 0 rgba(127,224,164, 0.8);
+  // background-color: #ffffff;
+  // color: $blue;
+}
+
+.hover-no-bg-effect {
+  box-shadow: 0 0px 0px 0 rgba(255, 0, 0, 0.8);
+}
+
+.hover-no-bg-effect:hover {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(255, 0, 0, 0.8);
+}
+.close {
+  outline: none !important;
+}

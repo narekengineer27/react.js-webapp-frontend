@@ -1,0 +1,121 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="167"
+  height="190"
+  viewBox="0 0 167 190"
+>
+  <defs>
+    <clipPath id="zswsa">
+      <path
+        fill="#fff"
+        d="M0 10C0 4.477 4.477 0 10 0h147c5.523 0 10 4.477 10 10v170c0 5.523-4.477 10-10 10H10c-5.523 0-10-4.477-10-10z"
+      ></path>
+    </clipPath>
+    <clipPath id="zswsb">
+      <path
+        fill="#fff"
+        d="M0 10C0 4.477 4.477 0 10 0h147c5.523 0 10 4.477 10 10v116H0z"
+      ></path>
+    </clipPath>
+    <clipPath id="zswsc">
+      <path fill="#fff" d="M73.45 52.44h21.037v21.111H73.45z"></path>
+    </clipPath>
+  </defs>
+  <g>
+    <g>
+      <g>
+        <path
+          fill="#fff"
+          d="M0 10C0 4.477 4.477 0 10 0h147c5.523 0 10 4.477 10 10v170c0 5.523-4.477 10-10 10H10c-5.523 0-10-4.477-10-10z"
+        ></path>
+        <path
+          fill="none"
+          stroke="#b2b2bb"
+          stroke-miterlimit="50"
+          stroke-width="6"
+          d="M0 10C0 4.477 4.477 0 10 0h147c5.523 0 10 4.477 10 10v170c0 5.523-4.477 10-10 10H10c-5.523 0-10-4.477-10-10z"
+          clipPath='url("#zswsa")'
+        ></path>
+      </g>
+      <g>
+        <g>
+          <path
+            fill="#b2b2bb"
+            d="M0 10C0 4.477 4.477 0 10 0h147c5.523 0 10 4.477 10 10v116H0z"
+          ></path>
+          <path
+            fill="none"
+            stroke="#b2b2bb"
+            stroke-miterlimit="50"
+            stroke-width="6"
+            d="M0 10C0 4.477 4.477 0 10 0h147c5.523 0 10 4.477 10 10v116H0v0z"
+            clipPath='url("#zswsb")'
+          ></path>
+        </g>
+      </g>
+      <g>
+        <path
+          fill="#b2b2bb"
+          d="M16 144a2 2 0 0 1 2-2h131a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2z"
+        ></path>
+      </g>
+      <g>
+        <path
+          fill="#b2b2bb"
+          d="M16 164a2 2 0 0 1 2-2h101a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2z"
+        ></path>
+      </g>
+      <g>
+        <g>
+          <path
+            fill="none"
+            stroke="#fff"
+            stroke-miterlimit="50"
+            stroke-width="3"
+            d="M84.23 101c21.058 0 38.13-17.013 38.13-38s-17.072-38-38.13-38C63.17 25 46.1 42.013 46.1 63s17.071 38 38.13 38z"
+          ></path>
+        </g>
+        <g>
+          <path
+            fill="#b2b2bb"
+            d="M73.45 52.44h21.037v21.111H73.45z"
+          ></path>
+          <path
+            fill="none"
+            stroke="#fff"
+            stroke-miterlimit="50"
+            stroke-width="6"
+            d="M73.45 52.44v0h21.037v21.111H73.45v0z"
+            clipPath='url("#zswsc")'
+          ></path>
+        </g>
+        <g>
+          <path
+            fill="#b2b2bb"
+            d="M113.419 25l10.518 16.889H102.9z"
+          ></path>
+          <path
+            fill="none"
+            stroke="#fff"
+            stroke-miterlimit="50"
+            stroke-width="3"
+            d="M113.419 25v0l10.518 16.889v0H102.9v0z"
+          ></path>
+        </g>
+        <g>
+          <path
+            fill="#b2b2bb"
+            d="M55.833 77.25l11.254 8.205-4.298 13.277H48.878l-4.299-13.277z"
+          ></path>
+          <path
+            fill="none"
+            stroke="#fff"
+            stroke-miterlimit="50"
+            stroke-width="3"
+            d="M55.833 77.25v0l11.254 8.205v0L62.79 98.732v0H48.878v0l-4.299-13.277v0z"
+          ></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

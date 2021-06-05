@@ -1,0 +1,19 @@
+@import "./userOffers.scss";
+
+.profile-page {
+  margin-bottom: 30px;
+  @import "./profilePageTop.scss";
+  @import "./userReview.scss";
+}
+.address-select {
+  display: block;
+  color: #bfbfbf !important;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.without-content {
+  text-align: center;
+  padding: 80px 0;
+}

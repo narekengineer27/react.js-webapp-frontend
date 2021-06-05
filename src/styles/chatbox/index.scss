@@ -1,0 +1,8 @@
+@import "./list.scss";
+@import "./contactbox.scss";
+
+.chat-area {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}

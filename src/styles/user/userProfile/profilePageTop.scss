@@ -1,0 +1,205 @@
+.profile-billboard-block {
+  // width: 368px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  background: #ffffff url(../../../assets/img/avatar-banner.png) 0px 0px
+    no-repeat;
+  background-size: 100% 88px;
+  padding: 32px 0;
+  max-height: 330px;
+}
+@media (max-width: 768px) {
+  .profile-location-block {
+    margin-left: 0;
+  }
+}
+.profile-location-block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 16px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  // max-width: 736px;
+  padding: 0;
+
+  .profile-location-image {
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+  }
+  .google-map-image {
+    margin: auto;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .address-text {
+    font-size: 13px;
+  }
+  .address-change {
+    color: $blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.profile-avatar-image {
+  position: relative;
+  width: 112px;
+  height: 112px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 5px solid #ffffff;
+  background: #fff;
+
+  .profile {
+    width: 102px;
+    height: 102px;
+    line-height: 107px;
+    font-size: 54px;
+  }
+  .upload-profile-image-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    padding: 6px 0;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    color: #fff;
+    border: 0;
+  }
+}
+.profile-info-text {
+  text-align: center;
+  margin-top: 15px;
+
+  .fullname {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .company-name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .country-name {
+    margin-top: 7px;
+    color: #848484;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+.profile-info-text-action {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.profile-buttons {
+  text-align: center;
+  margin-top: 14px;
+
+  a {
+    font-size: 17px;
+    font-weight: 500;
+    min-width: 180px;
+    padding: 15px;
+  }
+}
+.profile-info {
+  padding: 30px;
+
+  .change-location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #e1e1e1;
+
+    .location-inner {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      max-width: calc(100% / 2);
+      padding-right: 11px;
+    }
+  }
+  .description {
+    padding-top: 15px;
+    p {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+}
+.profile-title {
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.address-profile {
+  position: relative;
+}
+.loc-cancel {
+  color: #b2b2bb;
+  font-size: 12px;
+  position: absolute;
+  right: 7px;
+  top: -18px;
+}
+.loc-icon {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  color: $blue;
+}
+.address-profile-input {
+  width: 100%;
+  height: 30px;
+  padding: 8px 45px 8px 30px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  background: #ffffff;
+}
+.address-profile-btn {
+  position: absolute;
+  z-index: 2;
+  right: 7px;
+  top: 5px;
+  font-size: 15px;
+  border: none;
+  color: $blue;
+  cursor: pointer;
+  padding-bottom: 2px;
+  background: transparent;
+  text-decoration: underline;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+}

@@ -1,0 +1,26 @@
+.auction-bids {
+  cursor: pointer;
+  color: $blue;
+}
+
+.auction-bids:hover {
+  color: $green;
+}
+
+.auction-form-container {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.auction-title {
+  font-size: 20px;
+  color: $blue;
+}
+
+@media (max-width: 550px) {
+  .auction-form-container{
+    margin-top: 15px !important;
+  }
+}

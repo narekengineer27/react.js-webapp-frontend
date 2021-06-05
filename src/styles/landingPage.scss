@@ -1,0 +1,394 @@
+.landing-body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.landing-main {
+  position: relative;
+  height: 100vh;
+  background: $purple;
+  display: flex;
+  align-items: center;
+  color: white;
+
+  &>span {
+    position: absolute;
+    font-family: "Poppins-Bold";
+    font-size: 29px;
+    transition: top 1s, left 1s, font-size 1s;
+    z-index: 10;
+  }
+
+  .rec-deactive{
+    top: 27vh;
+    left: 8vw;
+  }
+  .ver-deactive {
+    top: 37vh;
+    left: 8vw;
+  }
+  .ent-deactive {
+    top: 47vh;
+    left: 8vw;
+  }
+  .pro-deactive {
+    top: 57vh;
+    left: 8vw;
+  }
+  .sor-deactive {
+    top: 67vh;
+    left: 8vw;
+  }
+
+  .rec-active {
+    top: 24vh;
+    left: 43vw;
+    font-size: 80px;
+  }
+  .ent-active {
+    top: 50vh;
+    left: 43vw;
+    font-size: 80px;
+  }
+  .pro-active {
+    top: 55vh;
+    left: 43vw;
+    font-size: 80px;
+  }
+
+  .kind-logo-img {
+    position: absolute;
+    top: 32vh;
+    left: 45vw;
+    height: 280px;
+    width: auto;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+
+  .landing-image {
+    position: absolute;
+    top: 25vh;
+    left: 45vw;
+    height: 550px;
+    width: auto;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+
+  .show-image {
+    opacity: 1;
+  }
+
+  .down-arrow {
+    position: absolute;
+    bottom: 15px;
+    left: 49vw;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .main-content {
+    margin-left: 60px;
+    margin-top: -100px;
+    z-index: 1;
+    max-width: 70%;
+    .main-title {
+      font-family: "Poppins-Bold";
+      font-size: 6rem;
+      color: $green;
+      line-height: 7rem;
+    }
+    .main-text {
+      margin-top: 30px;
+      font-size: 1.8rem;
+    }
+    .last-title{
+      font-family: "Poppins-Bold";
+      font-size: 4rem;
+      color: $green;
+      line-height: 5rem;
+    }
+    .landing-btn {
+      margin-top: 50px;
+      width: 205px;
+      height: 50px;
+      font-size: 19px;
+      font-weight: bold;
+      letter-spacing: 1.1px;
+      text-transform: none !important;
+      background-color: $green !important;
+    }
+  }
+
+  .green-circle {
+    position: absolute;
+    top: -320px;
+    right: -320px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #4467CF;
+  }
+
+  .circle-side{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    .green-circle-last {
+      position: absolute;
+      top: 150px;
+      right: -200px;
+      width: 1015px;
+      height: 1015px;
+      border-radius: 50%;
+      background-color: #4467CF;
+    }
+  }
+}
+
+.landing-slide-main {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .sliding-filter-sheet {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.2;
+  }
+
+  .main-content {
+    margin-left: 10%;
+    height: 60vh;
+    width: 55vw;
+    z-index: 1;
+    .slide-title {
+      font-family: "Poppins-Bold";
+      font-size: 3.8rem;
+      color: $green;
+      line-height: 5rem;
+    }
+
+    .slide-desc {
+      margin-top: 20px;
+      font-size: 2rem;
+      font-weight: 600;
+      color: white;
+    }
+  }
+}
+.landing-slide-main.swiper-slide:hover {
+  transform: scale(1) !important;
+}
+
+.landing-header {
+  position: fixed;
+  top: 40px;
+  left: 50px;
+  right: 50px;
+  z-index: 10;
+  transition: top 1s, background-color 1s, left 1s, right 1s, padding 1s;
+
+  .landing-header-content {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      margin-top: 8px;
+      width: 110px;
+      height: 50px;
+    }
+
+    .landing-btn {
+      width: 205px;
+      height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1.1px;
+      text-transform: none !important;
+      background-color: $green !important;
+    }
+  }
+}
+
+.landing-footer {
+  position: fixed;
+  bottom: 25px;
+  left: 88vw;
+  color: lightgray;
+  
+  span {
+    color: lightgray;
+  }
+  span:hover {
+    color: lightcoral;
+  }
+}
+
+.landing-btn {
+  width: 205px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  text-transform: none !important;
+  background-color: $green !important;
+}
+
+@media (max-width: 768px) {
+  .landing-main {
+    .main-content {
+      margin-left: 0px;
+      margin-top: 0px;
+      max-width: 100%;
+      padding: 0 30px;
+      .main-title {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+      .main-text {
+        font-size: 1rem;
+      }
+      .last-title{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: -100px;
+      }
+      .landing-btn {
+        margin-top: 40px;
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+      }
+    }
+    .green-circle {
+      position: absolute;
+      top: -70px;
+      right: -300px;
+      width: 530px;
+      height: 530px;
+      border-radius: 50%;
+      background-color: #4467CF;
+    }
+
+    &>span {
+      font-size: 23px;
+    }
+    .rec-deactive{
+      top: 17vh;
+      left: 30vw;
+    }
+    .ver-deactive {
+      top: 22vh;
+      left: 30vw;
+    }
+    .ent-deactive {
+      top: 27vh;
+      left: 30vw;
+    }
+    .pro-deactive {
+      top: 32vh;
+      left: 30vw;
+    }
+    .sor-deactive {
+      top: 37vh;
+      left: 30vw;
+    }
+  
+    .rec-active {
+      top: 50vh;
+      left: 15vw;
+      font-size: 45px;
+    }
+    .ent-active {
+      top: 70vh;
+      left: 15vw;
+      font-size: 45px;
+    }
+    .pro-active {
+      top: 75vh;
+      left: 15vw;
+      font-size: 45px;
+    }
+  
+    .kind-logo-img {
+      top: 55vh;
+      left: 10vw;
+      height: 130px;
+    }
+  
+    .landing-image {
+      top: 50vh;
+      left: 10vw;
+      height: 280px;
+    }
+  }
+
+  .landing-slide-main {
+    .main-content {
+      width: 80vw;
+      .slide-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+  
+      .slide-desc {
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .landing-header {
+    top: 15px;
+    left: 30px;
+    right:30px;
+  }
+  
+  .landing-footer {
+    position: fixed;
+    bottom: 25px;
+    left: 70vw;
+    color: lightgray;
+  }
+
+  .scrolled {
+    top: 0px !important;
+    background-color: rgba($color: #0D0630, $alpha: 0.9);
+    left: 0px;
+    right:0px;
+    padding: 0 5px;
+  }
+
+  .landing-header-content {
+    .logo {
+      width: 80px !important;
+      height: 35px !important;
+    }
+
+    .landing-btn {
+      width: 120px !important;
+      height: 40px !important;
+      font-size: 12px !important;
+    }
+  }
+
+  .circle-side{
+    .green-circle-last {
+      top: 300px !important;
+      right: -200px !important;
+      width: 500px !important;
+      height: 500px !important;
+    }
+  }
+}

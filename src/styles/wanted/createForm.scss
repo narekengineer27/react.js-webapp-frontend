@@ -1,0 +1,81 @@
+.img-blc {
+  max-width: 416px;
+  width: 100%;
+  border: 1px solid #b2b2bb;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.img-blc-title {
+  color: $blue;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.img-blc-header {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 40px;
+}
+.img-blc-description {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-top: 24px;
+  text-align: center;
+}
+.wanted-form {
+  width: 100%;
+  padding: 0 0 0 25px;
+  
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+.action-btn {
+  padding-top: 20px;
+  margin: 0 -5px 0;
+  opacity: 1;
+
+  .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 !important;
+    width: 100%;
+
+    .default-btn {
+      font-size: 17px;
+      max-width: 180px;
+      margin: 0 5px;
+      width: 100%;
+      z-index: 999;
+    }
+    .custom-btn {
+      max-width: 345px;
+      margin: 0 5px;
+      width: 100%;
+      font-size: 17px;
+      z-index: 9;
+    }
+  }
+}

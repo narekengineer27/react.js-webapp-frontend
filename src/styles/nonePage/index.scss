@@ -1,0 +1,28 @@
+.none-notification {
+  padding: 30px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+.none-notification-title {
+  font-size: 22px;
+  color: $blue;
+  margin: 0;
+  font-weight: 600;
+}
+.none-inner {
+  margin: 75px 0;
+  text-align: center;
+
+  .text {
+    font-size: 17px;
+    font-weight: 500;
+    color: #b2b2bb;
+    margin: 25px 0;
+  }
+  .button {
+    min-width: 220px;
+    font-size: 17px;
+    font-weight: 400;
+  }
+}

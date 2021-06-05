@@ -1,0 +1,134 @@
+.chatbox-main {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 300px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+  background: white;
+  border-radius: 8px 8px 0 0;
+  z-index: 100;
+  .header {
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid;
+    border-bottom-color: $blue;
+    background: $blue;
+    color: white;
+    border-radius: 8px 8px 0 0;
+  }
+  .chatbox-list {
+    height: 335px;
+    overflow-y: auto;
+
+    .contact-container {
+      padding: 16px;
+      display: block;
+      border-bottom: 1px solid #e1e1e1;
+      border-left: 2px solid transparent;
+      border-left-color: transparent;
+      width: 100%;
+      position: relative;
+      z-index: 10;
+      cursor: pointer;
+
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.11);
+      background-color: #fffefe;
+
+      .contact-profile {
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+
+        .contact-profile-avatar {
+          float: left;
+          position: relative;
+          display: block;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 15px;
+          min-width: 48px;
+        }
+
+        .contact-profile-text {
+          width: 185px;
+          font-size: 13px;
+          color: #000;
+          position: relative;
+          float: right;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          .contact-listing-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: #333333;
+            width: 100%;
+          }
+
+          .contact-opponent-name-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            .contact-opponent-name {
+              font-size: 12px;
+              font-weight: 400;
+              color: #333333;
+            }
+          }
+
+          .contact-last-message {
+            line-height: 14px;
+            -webkit-box-orient: vertical;
+            font-size: 12px;
+            white-space: nowrap;
+            color: #858585;
+            margin-top: 3px;
+            max-width: 93%;
+            display: inline-block;
+          }
+        }
+      }
+
+      .contact-date {
+        position: absolute;
+        bottom: 2px;
+        right: 16px;
+        font-size: 10px;
+        color: #333333;
+        font-weight: 300;
+      }
+    }
+
+    .contact-container:hover {
+      border-left-color: $blue;
+    }
+  }
+
+  .messages-menu-search {
+    padding: 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    .messages-menu-search-input {
+        width: 100%;
+        height: 45px;
+        padding: 10px 10px 10px 44px;
+        border: none;
+        border-bottom: 1px solid #e1e1e1;
+        font-size: 14px;
+        font-weight: 500;
+        background: url("../../assets/img/svg/search.svg") 15px 9px/20px 24px
+          no-repeat;
+      }
+  }
+}

@@ -1,0 +1,19 @@
+.messages-header {
+  display: flex;
+  padding: 15px 25px 10px 25px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1;
+
+  .material {
+    color: $green;
+    font-size: 30px;
+    padding: 5px;
+    display: none;
+  }
+  .seller {
+    color: $green;
+    font-size: 30px;
+    padding: 5px;
+    display: none;
+  }
+}

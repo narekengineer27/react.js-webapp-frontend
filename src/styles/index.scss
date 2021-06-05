@@ -1,0 +1,31 @@
+@import "./colors.scss";
+@import "./base.scss";
+
+@import "./landingPage.scss";
+@import "./dashboard/index.scss";
+@import "./header/index.scss";
+@import "./createListing/index.scss";
+@import "./uicomponents/index.scss";
+@import "./productDetail/index.scss";
+@import "./messages/index.scss";
+@import "./user/index.scss";
+@import "./nonePage/index.scss";
+@import "./wanted/index.scss";
+@import "./notifications/index.scss";
+@import "react-toastify/scss/main.scss";
+@import "./chatbox/index.scss";
+@import "./imprint.scss";
+@import "./paymentMethods/index.scss";
+@import "./order/index.scss";
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Popins-Regular"),
+    url(../assets/font/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local("Popins-Bold"),
+    url(../assets/font/Poppins/Poppins-Bold.ttf) format("truetype");
+}

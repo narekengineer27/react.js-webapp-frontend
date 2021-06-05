@@ -1,0 +1,55 @@
+.imprint-header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
+  background: $purple;
+  color: $green;
+  padding: 0 30px;
+  padding-top: 70px;
+  word-break: break-all;
+  line-height: 2.5rem;
+}
+
+.imprint-body {
+  padding: 50px 75px;
+  color: lightgray;
+  background: $purple;
+
+  .imprint-body-top{
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+  }
+
+  .imprint-item{
+    margin-top: 25px;
+    
+    .imprint-item-head{
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .terms-item-list{
+      margin-left: 25px;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .imprint-header{
+    font-size: 2.6rem;
+    height: 170px;
+  }
+  .imprint-body {
+    padding: 40px 30px;
+
+    .imprint-body-top{
+      font-size: 2rem;
+      padding-bottom: 10px;
+    }
+  }
+}
